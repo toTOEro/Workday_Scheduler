@@ -18,17 +18,22 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
-  </header>
-  <div class="container">
+    <!-- Success div is managed by jScript to display a notification to indicate saving the schedule hour was successful -->
+    <div id="success"><h5 ></h5></div>
 
+  </header>
+
+  <!-- The following container is for the schedule rows -->
+  <div class="container">
     <section class="d-flex flex-column justify-content-evenly">
+      <!-- Forms for each hour to manage schedule -->
       <form class="row h-100 align-items-top">
         <div class="hour">
           <label for="8AM">8AM</label>
         </div>
 
         <div class="flex-grow-1">
-          <textarea id="8AM" data-time="8 AM"></textarea>
+          <textarea id="8AM" data-time="8 AM" data-index="0"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -40,7 +45,7 @@
         </div>
 
         <div class="flex-grow-1">
-          <textarea id="9AM" data-time="9 AM"></textarea>
+          <textarea id="9AM" data-time="9 AM" data-index="1"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -53,7 +58,7 @@
 
 
         <div class="flex-grow-1">
-          <textarea id="10AM" data-time="10 AM"></textarea>
+          <textarea id="10AM" data-time="10 AM" data-index="2"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -64,7 +69,7 @@
           <label for="11AM">11AM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="11AM" data-time="11 AM"></textarea>
+          <textarea id="11AM" data-time="11 AM" data-index="3"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -75,7 +80,7 @@
           <label for="12PM">12PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="12PM" data-time="12 PM"></textarea>
+          <textarea id="12PM" data-time="12 PM" data-index="4"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -86,7 +91,7 @@
           <label for="1PM">1PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="1PM" data-time="1 PM"></textarea>
+          <textarea id="1PM" data-time="1 PM" data-index="5"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -97,7 +102,7 @@
           <label for="2PM">2PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="2PM" data-time="2 PM"></textarea>
+          <textarea id="2PM" data-time="2 PM" data-index="6"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -108,7 +113,7 @@
           <label for="3PM">3PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="3PM" data-time="3 PM"></textarea>
+          <textarea id="3PM" data-time="3 PM" data-index="7"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -119,7 +124,7 @@
           <label for="4PM">4PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="4PM" data-time="4 PM"></textarea>
+          <textarea id="4PM" data-time="4 PM" data-index="8"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -130,7 +135,7 @@
           <label for="5PM">5PM</label>
         </div>
         <div class="flex-grow-1">
-          <textarea id="5PM" data-time="5 PM"></textarea>
+          <textarea id="5PM" data-time="5 PM" data-index="9"></textarea>
         </div>
         <button class="saveBtn"><i class="fas fa-pen-fancy"></i></button>
 
@@ -140,7 +145,7 @@
 
   </div>
 
-
+<!-- Scripts used: jQuery, moment.js, custom javascript  -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/script.js"></script>
