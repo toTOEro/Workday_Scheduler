@@ -8,4 +8,4 @@ This workday scheduler is developed for the user to be able to plan out individu
 
 The code works by utilizing form elements in the HTML to submit data, and process it within Javascript to save the data into the browser's local storage. 
 
-![A user inputs their schedule for the day for 8AM, 10AM, and 4PM. They save the input, mousing over the notification that appears to indicate that the plans have been successfully submitted. Afterwards, the page is refreshed to show the information is still present on the page.](./assets/work_day_scheduler.gif)
+![A user inputs their schedule for the day for 8AM, 10AM, and 4PM. They save the input, mousing over the notification that appears to indicate that the plans have been successfully submitted. Afterwards, the page is refreshed to show the information is still present on the page.](./Develop/assets/work_day_scheduler.gif)
