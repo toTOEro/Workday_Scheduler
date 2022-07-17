@@ -1,6 +1,6 @@
 # Work Day Scheduler Starter Code
 
-The project can be found at the following link: https://totoero.github.io/Workday_Scheduler/
+The project can be found at the following link: https://totoero.github.io/Workday_Scheduler/Develop/
 
 
 
